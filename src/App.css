@@ -1,0 +1,102 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.board-area {
+  flex: 2;
+  max-width: 600px;
+}
+
+.status {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.reset-button:hover {
+  background-color: #1976d2;
+}
+
+.move-log {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #fff;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.move-log h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.move-list {
+  height: 400px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.move-item {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  background-color: #fafafa;
+}
+
+.no-moves {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+/* 🎯 Responsive Styling for Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .board-area, .move-log {
+    max-width: 100%;
+  }
+
+  .reset-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .status {
+    font-size: 18px;
+  }
+
+  .move-item {
+    font-size: 14px;
+  }
+}
