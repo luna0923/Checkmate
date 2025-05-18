@@ -59,5 +59,9 @@ Open http://localhost:3000 in your browser and enjoy your game.
 ```
 
 
+
+
+
+
 📄 License
 This project is licensed under the MIT License.
